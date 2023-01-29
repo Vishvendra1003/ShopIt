@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_profile_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/app_gradient_color_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.torrex.shopit.utils.TextViewBoldDesign
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/profile_title"
+            android:textSize="@dimen/primary_title_size"
+            android:textColor="@color/white"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/sv_profile"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_profile_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/fl_user_profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_frame_height"
+                android:layout_margin="@dimen/primary_layout_margin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv_user_profile_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/content_description"
+                    android:background="@color/light_gray"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_person_identity_24"/>
+
+                <ImageView
+                    android:id="@+id/iv_user_profile_photo_edit"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="150dp"
+                    android:contentDescription="@string/content_description"
+                    android:scaleType="fitXY"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_baseline_edit_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_profile_details"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/primary_layout_margin"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/fl_user_profile_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_profile_email"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/input_text_margin"
+                    android:layout_marginTop="@dimen/signUp_margin_top"
+                    android:backgroundTint="@color/app_background"
+                    android:hint="@string/signUp_email"
+                    android:textColorHint="@color/light_gray">
+
+                    <com.torrex.shopit.utils.EditTextCustom
+                        android:id="@+id/et_profile_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/profile_text_padding"
+                        android:inputType="text"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/input_text_size"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_profile_first_name"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/input_text_margin"
+                    android:layout_marginTop="@dimen/signUp_margin_top"
+                    android:backgroundTint="@color/app_background"
+                    android:hint="@string/first_name"
+                    android:textColorHint="@color/light_gray">
+
+                    <com.torrex.shopit.utils.EditTextCustom
+                        android:id="@+id/et_profile_first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:text=""
+                        android:padding="@dimen/profile_text_padding"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/input_text_size"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_profile_last_name"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/input_text_margin"
+                    android:layout_marginTop="@dimen/signUp_margin_top"
+                    android:backgroundTint="@color/app_background"
+                    android:hint="@string/last_name"
+                    android:textColorHint="@color/light_gray">
+
+                    <com.torrex.shopit.utils.EditTextCustom
+                        android:id="@+id/et_profile_last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:text=""
+                        android:padding="@dimen/profile_text_padding"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/input_text_size"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_profile_mobile"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/input_text_margin"
+                    android:layout_marginTop="@dimen/signUp_margin_top"
+                    android:backgroundTint="@color/app_background"
+                    android:hint="@string/user_mob"
+                    android:textColorHint="@color/light_gray">
+
+                    <com.torrex.shopit.utils.EditTextCustom
+                        android:id="@+id/et_profile_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="@dimen/profile_text_padding"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/input_text_size"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_user_profile_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin_top"
+                    android:background="@color/light_blue"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_user_profile_gender_title"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/layout_margin_top"
+                        android:textSize="@dimen/primary_box_data_size"
+                        android:textColor="@color/white"
+                        android:text="@string/user_gender"
+                        />
+                    <TextView
+                        android:id="@+id/tv_user_profile_gender"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="@dimen/layout_margin_top"
+                        android:textSize="@dimen/primary_box_data_size"
+                        android:background="@drawable/primary_background"
+                        android:textColor="@color/white"
+                        android:text="@string/signUP_male"
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <com.torrex.shopit.utils.CustomButton
+                android:id="@+id/btn_profile_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/edit_button_top"
+                android:gravity="center"
+                android:text="@string/edit"
+                android:background="@drawable/button_background"
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_text_size"
+                app:layout_constraintTop_toBottomOf="@id/ll_profile_details"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="@dimen/primary_padding"
+                android:background="@drawable/primary_outline_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_profile_edit"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/log_out"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/primary_text_size"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    />
+
+                <ImageButton
+                    android:id="@+id/iv_log_out"
+                    android:layout_width="30dp"
+                    android:layout_marginStart="@dimen/primary_layout_margin"
+                    android:focusable="?attr/selectableItemBackground"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_logout_24"
+                    android:tooltipText="LogOut"
+                 />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

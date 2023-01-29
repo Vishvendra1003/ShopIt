@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.payment.PaymentFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/ll_payment_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="50dp">
+
+        <TextView
+            android:id="@+id/tv_payment_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To Go with Payment click below..."
+            android:gravity="center"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:textSize="@dimen/primary_title_size"
+            android:textColor="@color/light_blue"/>
+
+        <com.torrex.shopit.utils.CustomButton
+            android:id="@+id/btn_continue_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="Continue Payment"
+            android:textColor="@color/white"
+            android:focusable="?attr/selectableItemBackground"
+            android:layout_marginTop="@dimen/layout_margin_top"/>
+
+    </LinearLayout>
+
+
+
+    <!--edit text for entering amount to be paid-->
+
+</FrameLayout>

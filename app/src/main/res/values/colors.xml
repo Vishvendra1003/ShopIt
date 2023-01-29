@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="offwhite">#D2DEE4</color>
+    <color name="colorAccent">#0C90F1</color>
+    <color name="app_background">#A8B4F3</color>
+    <color name="colorImageViewBackground">#E1E1E1</color>
+
+
+    <color name="gray">#4C4A4A</color>
+    <color name="dark_gray">#272222</color>
+    <color name="light_gray">#90A4AE</color>
+    <color name="extra_light_gray">#ECEFF1</color>
+    <color name="blue">#4D5FBF</color>
+    <color name="light_blue">#93B6E0</color>
+    <color name="dark_blue">#0D2087</color>
+
+    <color name="green">#4CAF50</color>
+
+    <color name="red">#F30E0E</color>
+    <color name="dark_red">#770909</color>
+    <color name="light_red">#F47979</color>
+    <color name="orange">#ED5C2E</color>
+
+    <color name="snackbar_error_color">#F72400</color>
+    <color name="snackbar_Success_color">#57DF5D</color>
+    <color name="item_value_text_color">#252222</color>
+    <color name="colorSecondaryText">#F9F9FB</color>
+    <color name="dashboard_item_details_bg">#7986CB</color>
+
+
+    <color name="divider_color">#4C4C4C</color>
+    <color name="task_list_action_color">#F7F6FA</color>
+    <color name="task_list_title_view_bg_color">#F8F8F8</color>
+
+    <color name="colorThemeGrey">#4C4A4A</color>
+    <color name="colorThemeDarkGrey">#272222</color>
+    <color name="primary_text_color">#141515</color>
+    <color name="text_hint_color">#4D5151</color>
+    <color name="secondary_text_color">#7A8089</color>
+    <color name="colorText">#7A8089</color>
+</resources>

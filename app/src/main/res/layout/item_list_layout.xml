@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/primary_recycle_view_list_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.circularreveal.CircularRevealLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/recycle_view_margin"
+        android:layout_marginStart="@dimen/recycle_view_margin"
+        android:layout_marginTop="@dimen/recycle_view_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_product_image_list"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="2"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/ll_product_details_list"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_product_name_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NAME"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="@dimen/primary_recycle_view_text_title_size"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_product_price_list"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Price"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="@dimen/primary_recycle_view_text_size"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_product_des_list"
+                android:layout_width="match_parent"
+                android:layout_height="42sp"
+                android:text="Item details"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="@dimen/primary_recycle_view_text_size"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ib_product_delete_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_delete_forever_24"
+            android:focusable="?attr/selectableItemBackground"
+            />
+    </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

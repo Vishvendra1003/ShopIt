@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddAddressActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_address_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="@dimen/ll_elevation_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/primary_padding"
+            android:gravity="center"
+            android:elevation="@dimen/bar_elevation_size"
+            android:textSize="@dimen/primary_title_size"
+            android:text="@string/title_address" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/primary_layout_margin">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_address_line_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/title_address_line_1" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_address_line_1"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/primary_layout_margin">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_address_line_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/title_address_line_2" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_address_line_2"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/primary_layout_margin">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_address_line_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/title_address_line_3" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_address_line_3"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/primary_layout_margin">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_address_city"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/title_address_city" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_address_city"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/primary_layout_margin">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_address_state"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/title_address_state" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_address_state"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/primary_layout_margin">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_address_postal_code"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/title_address_postal_code" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_address_postal_code"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="6"
+                />
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/primary_layout_margin">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_address_mobile_no"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_address_mobile_no" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_address_mobile_no"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    />
+
+            </LinearLayout>
+
+    </LinearLayout>
+    <androidx.constraintlayout.utils.widget.MotionButton
+        android:id="@+id/btn_address_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/ll_elevation_size"
+        android:text="@string/btn_address_save"
+        android:padding="@dimen/primary_padding"
+        android:layout_marginTop="@dimen/primary_layout_margin"
+        android:layout_marginStart="@dimen/primary_layout_margin"
+        android:layout_marginEnd="@dimen/primary_layout_margin"
+        android:background="@drawable/button_background"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_address_add"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

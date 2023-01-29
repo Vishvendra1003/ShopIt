@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">ShopIt</string>
+    <string name="sha_1_key">86:FF:6D:1F:17:04:64:37:39:79:9D:4C:03:01:16:21:FB:EB:F1:86</string>
+
+    <!--Title for pages and heading-->
+    <string name="app_home">Home</string>
+    <string name="login_title">LOGIN</string>
+    <string name="signUp_title">SignUp</string>
+    <string name="profile_title">User Profile</string>
+    <string name="profile_button_title">Submit</string>
+    <string name="submit">Submit</string>
+    <string name="edit">Edit</string>
+    <string name="save">SAVE</string>
+    <string name="signUp_toolbar_title">Create An Account</string>
+
+
+    <!--text input layout title-->
+    <!--login details-->
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+
+    <!--signup details-->
+
+    <string name="sign_up_account">Don\'t have account ...</string>
+    <string name="sign_up">SignUp</string>
+    <string name="signUp_email">Email</string>
+    <string name="signUP_password">Password</string>
+    <string name="signUP_male">Male</string>
+    <string name="signUP_female">Female</string>
+
+    <!--User details-->
+    <string name="user_name">UserName</string>
+    <string name="first_name">FirstName</string>
+    <string name="last_name">LastName</string>
+    <string name="user_email">UserEmail</string>
+    <string name="user_age">UserAge</string>
+    <string name="user_gender">Gender</string>
+    <string name="user_dob">UserDOB</string>
+    <string name="user_mob">UserMob</string>
+    <string name="user_password">Password</string>
+    <string name="user_confirm_password">Confirm Password</string>
+
+    <!--User Profile Details-->
+    <string name="user_prifile_name">UserName</string>
+    <string name="first_profile_name">FirstName</string>
+    <string name="last_profile_name">LastName</string>
+    <string name="user_profile_email">UserEmail</string>
+    <string name="user_profile_age">UserAge</string>
+    <string name="user_profile_sex">UserSex</string>
+    <string name="user_profile_dob">UserDOB</string>
+    <string name="user_profile_mob">UserMob</string>
+    <string name="content_description">image</string>
+    <string name="log_out">LogOut</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_account">My Account</string>
+    <string name="title_my_product">My Selling Product</string>
+    <string name="title_my_order">My Orders</string>
+    <string name="title_user_profile">Profile</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_payment">Payment</string>
+    <string name="title_buy_product">Buy Product</string>
+
+
+    <string name="no_sell_product">NO Item For Sell....</string>
+    <string name="no_order_placed">NO Order Placed..</string>
+    <string name="title_add_product">ADD PRODUCT</string>
+    <string name="title_edit_product">EDIT PRODUCT</string>
+    <string name="et_hint_product_title">Product Title</string>
+    <string name="et_hint_product_price">Product Price</string>
+    <string name="et_hint_product_quantity">Product Quantity</string>
+    <string name="et_hint_product_description">ProductDescription</string>
+    <string name="btn_lbl_submit">Submit</string>
+
+
+    <!--Home fragment text-->
+    <string name="no_product_online">Sorry!!!!!!</string>
+
+    <!-- Dialog msg text -->
+    <string name="delete_dialog">DELETE</string>
+    <string name="dialog_delete_confirm">Are You Sure To Delete???</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="progress_bar_msg">Please Wait!!!!</string>
+    <string name="please_click_back_again_to_exit">Please click back again to exit</string>
+
+
+    <!--Product Screen Details-->
+    <string name="product_screen_price_title">Price:</string>
+    <string name="product_screen_quantity_title">Quantity:</string>
+    <string name="product_screen_description">Description</string>
+    <string name="btn_product_screen_add_to_cart">Add to Cart</string>
+    <string name="btn_product_screen_buy_now">BUY NOW</string>
+    <string name="btn_product_screen_added_to_cart">Added To Cart</string>
+
+
+    <!--Address Details and Titles-->
+    <string name="title_address">Address</string>
+    <string name="title_address_add">Add Address</string>
+    <string name="title_address_edit">Edit Address</string>
+    <string name="title_address_line_1">Add line 1:</string>
+    <string name="title_address_line_2">Add line 2:</string>
+    <string name="title_address_line_3">Add line 3:</string>
+    <string name="title_address_city">City</string>
+    <string name="title_address_state">State</string>
+    <string name="title_address_mobile_no">Mobile</string>
+    <string name="title_address_postal_code">Postal Code</string>
+    <string name="btn_address_save">SAVE</string>
+
+    <!--MyAddress Details and Title-->
+    <string name="toolbar_my_address_title">My Addresses</string>
+    <string name="recycle_view_address">Address</string>
+    <string name="recycle_view_mobile">Mobile</string>
+    <string name="recycle_view_postal_code">Postal Code</string>
+    <string name="no_address">No Address \n Please Add Address...</string>
+
+
+    <!--Order Summary Details and title-->
+    <string name="toolbar_order_placed_title">Order Placed</string>
+    <string name="order_summary_toolbar_title">Order Summary</string>
+    <string name="order_summary_product_view_title">Product</string>
+    <string name="order_summary_address">Address</string>
+    <string name="order_summary_charges">Charges</string>
+    <string name="btn_order_summary_continue">Continue</string>
+    <string name="order_summary_product_price">Product Price:</string>
+    <string name="order_summary_shipping_charges">Shipping Charges:</string>
+    <string name="order_summary_total_charges">Total Charges:</string>
+    <string name="btn_order_summary_pay">Pay</string>
+
+    <string name="order_summary_fixed_shipping_charges">50</string>
+    <string name="amount">Amount</string>
+    <string name="upi">UPI</string>
+    <string name="description">description</string>
+    <string name="user_name_payment">UserName</string>
+
+    <string name="account_userId">UserID</string>
+    <string name="account_vpa">VPA</string>
+    <string name="account_userName">UserName</string>
+    <string name="account_merchant_code">Merchant Code</string>
+
+    <string name="download_invoice">Download Invoice</string>
+
+    <!--Cart Item List View-->
+    <string name="toolbar_cart_title">My Cart</string>
+    <string name="no_item_in_cart">No Item In Cart</string>
+
+
+</resources>

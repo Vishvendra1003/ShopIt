@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="always"
+    tools:context=".activities.RegisterNewUser">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_register_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.torrex.shopit.utils.TextViewBoldDesign
+            android:id="@+id/tv_signup_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/signUp_toolbar_title"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/button_text_size"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <FrameLayout
+        android:id="@+id/fl_register_header_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_frame_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <FrameLayout
+            android:layout_width="@dimen/login_frame_logo_width"
+            android:layout_height="@dimen/login_frame_logo_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/iv_profile_register_image"
+                android:layout_width="@dimen/login_image_logo_width"
+                android:layout_height="@dimen/login_image_logo_height"
+                android:scaleType="fitCenter"
+                android:contentDescription="image"
+                android:focusable="?attr/selectableItemBackground"
+                android:layout_gravity="center"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/user_image_background"/>
+        </FrameLayout>
+
+
+
+    </FrameLayout>
+
+    <com.torrex.shopit.utils.TextViewBoldDesign
+        android:id="@+id/tv_register_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="@dimen/primary_title_size"
+        android:textAlignment="center"
+        android:text="@string/sign_up"
+        android:textColor="@color/blue"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fl_register_header_image"/>
+
+    <LinearLayout
+        android:id="@+id/ll_signUp_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tv_register_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_signUp_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_text_margin"
+            android:layout_marginTop="@dimen/signUp_margin_top"
+            android:backgroundTint="@color/app_background"
+            android:hint="@string/signUp_email"
+            android:textColorHint="@color/light_gray">
+
+            <com.torrex.shopit.utils.EditTextCustom
+                android:id="@+id/et_signup_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/text_padding"
+                android:inputType="text"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/input_text_size"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_signUp_first_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_text_margin"
+            android:layout_marginTop="@dimen/signUp_margin_top"
+            android:backgroundTint="@color/app_background"
+            android:hint="@string/first_name"
+            android:textColorHint="@color/light_gray">
+
+            <com.torrex.shopit.utils.EditTextCustom
+                android:id="@+id/et_signUp_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text=""
+                android:padding="@dimen/text_padding"
+                android:textColor="@color/black"
+                android:textSize="@dimen/input_text_size"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_signUp_last_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_text_margin"
+            android:layout_marginTop="@dimen/signUp_margin_top"
+            android:backgroundTint="@color/app_background"
+            android:hint="@string/last_name"
+            android:textColorHint="@color/light_gray">
+
+            <com.torrex.shopit.utils.EditTextCustom
+                android:id="@+id/et_signUp_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text=""
+                android:padding="@dimen/text_padding"
+                android:textColor="@color/black"
+                android:textSize="@dimen/input_text_size"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_register_gender"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/input_text_margin"
+            android:layout_marginStart="@dimen/input_text_margin"
+            android:layout_marginEnd="@dimen/input_text_margin"
+            android:orientation="horizontal"
+            >
+
+            <com.torrex.shopit.utils.CustomRadioButton
+                android:id="@+id/rb_male"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/gender_tab_selector"
+                android:layout_marginEnd="@dimen/input_text_margin"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:checked="false"
+                android:button="@null"
+                android:textStyle="bold"
+                android:textColor="@drawable/gender_tab_color_selector"
+                android:text="@string/signUP_male"
+                />
+
+            <com.torrex.shopit.utils.CustomRadioButton
+                android:id="@+id/rb_female"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/signUP_female"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/input_text_margin"
+                android:background="@drawable/gender_tab_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:textColor="@drawable/gender_tab_color_selector"
+                android:textStyle="bold"
+                />
+
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:id="@+id/ll_date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/date_text_size"
+            android:layout_marginStart="@dimen/input_text_margin"
+            android:layout_marginEnd="@dimen/input_text_margin"
+            android:layout_marginTop="@dimen/layout_date_margin_top"
+            android:orientation="horizontal"
+            >
+
+                <com.torrex.shopit.utils.TextViewBoldDesign
+                    android:id="@+id/tv_signUp_dob"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:text=""
+                    android:layout_weight="4"
+                    android:background="@drawable/primary_background"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/input_text_size"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/ib_date_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/date_icon_size"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_date_range_24" />
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_signUp_mobile"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_text_margin"
+            android:layout_marginTop="@dimen/signUp_margin_top"
+            android:backgroundTint="@color/app_background"
+            android:hint="@string/user_mob"
+            android:textColorHint="@color/light_gray">
+
+            <com.torrex.shopit.utils.EditTextCustom
+                android:id="@+id/et_signUp_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="@dimen/text_padding"
+                android:textColor="@color/black"
+                android:textSize="@dimen/input_text_size"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_signUp_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_text_margin"
+            android:layout_marginTop="@dimen/signUp_margin_top"
+            android:backgroundTint="@color/app_background"
+            android:hint="@string/user_password"
+            android:textColorHint="@color/light_gray">
+
+            <com.torrex.shopit.utils.EditTextCustom
+                android:id="@+id/et_signUp_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:text=""
+                android:padding="@dimen/text_padding"
+                android:textColor="@color/black"
+                android:textSize="@dimen/input_text_size"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_signUp_confirm_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_text_margin"
+            android:layout_marginTop="@dimen/signUp_margin_top"
+            android:backgroundTint="@color/app_background"
+            android:hint="@string/user_confirm_password"
+            android:textColorHint="@color/light_gray">
+
+            <com.torrex.shopit.utils.EditTextCustom
+                android:id="@+id/et_signUp_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:text=""
+                android:padding="@dimen/text_padding"
+                android:textColor="@color/black"
+                android:textSize="@dimen/input_text_size"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/signUp_margin_top"
+        android:background="@drawable/button_background"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/signUp_title"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_signUp_details"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

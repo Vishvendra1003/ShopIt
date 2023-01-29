@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--title size-->
+    <dimen name="splash_title_size">60sp</dimen>
+    <dimen name="primary_title_size">30sp</dimen>
+    <dimen name="primary_text_size">22sp</dimen>
+    <dimen name="primary_recycle_title_text_size">22sp</dimen>
+    <dimen name="primary_recycle_text_size">18sp</dimen>
+
+    <dimen name="ll_elevation_size">3dp</dimen>
+    <dimen name="bar_elevation_size">2dp</dimen>
+
+    <dimen name="primary_box_data_size">20dp</dimen>
+
+
+
+    <!--Recycle View Sizes-->
+    <dimen name="primary_recycle_view_list_height">120dp</dimen>
+    <dimen name="primary_recycle_view_text_title_size">20sp</dimen>
+    <dimen name="primary_recycle_view_text_size">18sp</dimen>
+    <dimen name="primary_recycle_view_padding">4sp</dimen>
+    <dimen name="primary_recycle_view_margin">10sp</dimen>
+
+
+    <dimen name="login_frame_height">200dp</dimen>
+    <dimen name="login_frame_logo_height">100dp</dimen>
+    <dimen name="login_image_logo_height">90dp</dimen>
+    <dimen name="login_frame_logo_width">120dp</dimen>
+    <dimen name="login_image_logo_width">100dp</dimen>
+
+    <!--Input text layout sizes-->
+    <dimen name="layout_margin_top">20dp</dimen>
+    <dimen name="primary_layout_margin">20dp</dimen>
+    <dimen name="primary_toolbar_margin">40dp</dimen>
+    <dimen name="layout_date_margin_top">10dp</dimen>
+    <dimen name="signUp_margin_top">10dp</dimen>
+    <dimen name="edit_button_top">40dp</dimen>
+
+    <dimen name="recycle_view_margin">10dp</dimen>
+
+    <dimen name="input_text_margin">5dp</dimen>
+    <dimen name="text_padding">10dp</dimen>
+    <dimen name="recycle_view_padding">6dp</dimen>
+    <dimen name="recycle_view_text_padding">2dp</dimen>
+
+    <dimen name="profile_text_padding">7dp</dimen>
+    <dimen name="primary_padding">10dp</dimen>
+    <dimen name="primary_btn_padding">20dp</dimen>
+
+    <dimen name="input_text_layout_size">50dp</dimen>
+    <dimen name="input_text_size">20sp</dimen>
+    <dimen name="hint_text_size">20sp</dimen>
+
+    <!--button size-->
+    <dimen name="click_button_size">40dp</dimen>
+    <dimen name="button_text_size">30sp</dimen>
+    <dimen name="date_text_size">40sp</dimen>
+    <dimen name="date_icon_size">40sp</dimen>
+    <dimen name="product_screen_button_size">50dp</dimen>
+    <dimen name="button_product_screen_text_size">20sp</dimen>
+
+    <!--Dialog Box Size-->
+    <dimen name="progress_bar_size">50sp</dimen>
+    <dimen name="progress_bar_margin">20sp</dimen>
+
+
+    <!--Product recycle view sizes-->
+    <dimen name="home_product_layout_size">150sp</dimen>
+    <dimen name="home_product_image_width">140sp</dimen>
+    <dimen name="home_product_image_padding">4sp</dimen>
+
+    <dimen name="home_product_image_height">100sp</dimen>
+    <dimen name="home_recycle_view_text_size">20sp</dimen>
+    <dimen name="home_product_des_height">40sp</dimen>
+    <dimen name="product_recycle_view_text_size">20sp</dimen>
+
+    <!-- Cart Item View And Sizes-->
+    <dimen name="cart_layout_size">150sp</dimen>
+    <dimen name="cart_image_width">140sp</dimen>
+    <dimen name="cart_image_padding">4sp</dimen>
+
+    <dimen name="cart_image_height">100sp</dimen>
+    <dimen name="cart_recycle_text_size">20sp</dimen>
+    <dimen name="cart_product_des_height">40sp</dimen>
+    <dimen name="cart_view_text_size">20sp</dimen>
+
+    <!--Order Summary And Product View Layout Size-->
+    <dimen name="product_view_layout_size">150sp</dimen>
+    <dimen name="product_view_image_width">140sp</dimen>
+    <dimen name="product_view_padding">4sp</dimen>
+
+    <dimen name="product_view_image_height">100sp</dimen>
+    <dimen name="product_view_title_text_size">20sp</dimen>
+    <dimen name="product_view_des_size">40sp</dimen>
+    <dimen name="product_view_text_size">16sp</dimen>
+
+    <!--Order Placed View Size-->
+    <dimen name="order_placed_product_image_width">80dp</dimen>
+    <dimen name="order_placed_product_image_height">100dp</dimen>
+    <dimen name="order_placed_text_size">15sp</dimen>
+    <dimen name="order_placed_title_text_size">40sp</dimen>
+    <dimen name="order_placed_padding_size">5dp</dimen>
+    <dimen name="order_placed_margin_top_size">30dp</dimen>
+
+    <!--My Account Bar Layout Bar Size-->
+    <dimen name="default_bar_size_my_account">40dp</dimen>
+    <dimen name="default_text_size_my_account">20sp</dimen>
+    <dimen name="default_padding_my_account">5dp</dimen>
+
+
+
+
+
+
+
+
+
+</resources>

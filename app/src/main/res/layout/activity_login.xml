@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity">
+
+
+    <FrameLayout
+        android:id="@+id/fl_login_header_image"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/login_frame_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:layout_width="@dimen/login_frame_logo_width"
+            android:layout_height="@dimen/login_frame_logo_height"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <com.torrex.shopit.utils.TextViewBoldDesign
+        android:id="@+id/tv_login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="@dimen/primary_title_size"
+        android:textAlignment="center"
+        android:text="@string/login_title"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fl_login_header_image"/>
+
+    <LinearLayout
+        android:id="@+id/ll_login_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tv_login_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_login_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_text_margin"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:backgroundTint="@color/app_background"
+            android:hint="@string/login_email"
+            android:textColorHint="@color/light_gray">
+
+            <com.torrex.shopit.utils.EditTextCustom
+                android:id="@+id/et_login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/text_padding"
+                android:inputType="text"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/input_text_size"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_login_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_text_margin"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:backgroundTint="@color/app_background"
+            android:hint="@string/login_password"
+            android:textColorHint="@color/light_gray">
+
+            <com.torrex.shopit.utils.EditTextCustom
+                android:id="@+id/et_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:text=""
+                android:padding="@dimen/text_padding"
+                android:textColor="@color/black"
+                android:textSize="@dimen/input_text_size"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="@string/sign_up_account"
+                android:textColor="@color/red"
+                android:textSize="17dp"
+                />
+            <TextView
+                android:id="@+id/tv_sign_up"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="@string/sign_up"
+                android:textColor="@color/red"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top"
+        android:background="@drawable/button_background"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/login_title"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_login_details" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
