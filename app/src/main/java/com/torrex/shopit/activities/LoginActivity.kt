@@ -36,7 +36,7 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
                 }
                 R.id.tv_sign_up->{
                     startActivity(Intent(this, RegisterNewUser::class.java))
-                    Toast.makeText(this,"sign up clicked",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this,"sign up clicked....",Toast.LENGTH_SHORT).show()
 
                 }
             }
