@@ -36,7 +36,7 @@ class AddAddressActivity : BaseActivity(), View.OnClickListener {
                 false
             }
             TextUtils.isEmpty(et_address_line_2.text.toString().trim {it <= ' ' }) -> {
-                showErrorSnackBar("Please enter address line 2",true)
+                showErrorSnackBar("Please your enter address line 2",true)
                 false
             }
             TextUtils.isEmpty(et_address_line_3.text.toString().trim {it <= ' ' }) -> {
